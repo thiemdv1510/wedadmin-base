@@ -6,7 +6,7 @@ import localeEN from 'element-plus/lib/locale/lang/en'
 import messages from '../utils/i18n'
 
 const i18n = createI18n({
-  locale: localeZH.name,
+  locale: 'vi',
   fallbackLocale: localeEN.name,
   messages,
 })

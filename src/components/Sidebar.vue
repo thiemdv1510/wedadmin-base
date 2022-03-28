@@ -7,7 +7,7 @@
                     <el-submenu :index="item.index" :key="item.index">
                         <template #title>
                             <i :class="item.icon"></i>
-                            <span>{{ item.title }}</span>
+                            <span>{{$t(`i18n.` + item.title)}}</span>
                         </template>
                         <template v-for="subItem in item.subs">
                             <el-submenu v-if="subItem.subs" :index="subItem.index" :key="subItem.index">
@@ -41,38 +41,38 @@ export default {
             {
                 icon: "el-icon-lx-home",
                 index: "/dashboard",
-                title: "系统首页",
+                title: "Dashboard",
             },
             {
                 icon: "el-icon-lx-cascades",
                 index: "/table",
-                title: "基础表格",
+                title: "table",
             },
             {
                 icon: "el-icon-lx-copy",
                 index: "/tabs",
-                title: "tab选项卡",
+                title: "Tabs",
             },
             {
                 icon: "el-icon-lx-calendar",
                 index: "3",
-                title: "表单相关",
+                title: "form",
                 subs: [
                     {
                         index: "/form",
-                        title: "基本表单",
+                        title: "Form",
                     },
                     {
                         index: "/upload",
-                        title: "文件上传",
+                        title: "Upload",
                     },
                     {
                         index: "4",
-                        title: "三级菜单",
+                        title: "Menu",
                         subs: [
                             {
                                 index: "/editor",
-                                title: "富文本编辑器",
+                                title: "Editor",
                             },
                         ],
                     },
@@ -81,37 +81,37 @@ export default {
             {
                 icon: "el-icon-lx-emoji",
                 index: "/icon",
-                title: "自定义图标",
+                title: "Icon",
             },
             {
                 icon: "el-icon-pie-chart",
                 index: "/charts",
-                title: "schart图表",
+                title: "Charts",
             },
             {
                 icon: "el-icon-lx-global",
                 index: "/i18n",
-                title: "国际化功能",
+                title: "Internationalization",
             },
             {
                 icon: "el-icon-lx-warn",
                 index: "7",
-                title: "错误处理",
+                title: "Error handling",
                 subs: [
                     {
                         index: "/permission",
-                        title: "权限测试",
+                        title: "Permission",
                     },
                     {
                         index: "/404",
-                        title: "404页面",
+                        title: "Page 404",
                     },
                 ],
             },
             {
                 icon: "el-icon-lx-redpacket_fill",
                 index: "/donate",
-                title: "支持作者",
+                title: "Donate",
             },
         ];
 

@@ -18,7 +18,15 @@ export default {
             title1: 'Common usage',
             p1: "If you reveal your secrets to the wind you should not blame the wind for  revealing them to the trees.",
             p2: "Nothing can help us endure dark times better than our faith. ",
-            p3: "If you can do what you do best and be happy, you're further along in life  than most people."
+            p3: "If you can do what you do best and be happy, you're further along in life  than most people.",
+            table: 'Table',
+            form: 'Form'
+        }
+    },
+    'vi': {
+        i18n: {
+            table: 'Danh sách',
+            form: 'Thiem'
         }
     }
 }
